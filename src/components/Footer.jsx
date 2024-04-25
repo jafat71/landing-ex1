@@ -18,19 +18,19 @@ const Footer = () => {
                         <div className="flex flex-col space-y-4 md:flex-row md:ml-24 md:space-x-24 md:space-y-0">
                             <div className="flex flex-col space-y-4 text-center md:text-left">
                                 <div className="hover:scale-110 hover:text-bgLightBlue dark:hover:text-bgRose  transition-all duration-300">
-                                    <a href="#">Features</a>
+                                    <a href="#features">Features</a>
                                 </div>
                                 <div className="hover:scale-110 hover:text-bgLightBlue dark:hover:text-bgRose transition-all duration-300">
-                                    <a href="#">Tools</a>
+                                    <a href="#services">Tools</a>
                                 </div>
                                 <div className="hover:scale-110 hover:text-bgLightBlue dark:hover:text-bgRose transition-all duration-300">
-                                    <a href="#">Our Work</a>
+                                    <a href="#work">Gallery</a>
                                 </div>
                             </div>
 
                             <div className="flex flex-col space-y-4 text-center md:text-left">
                                 <div className="hover:scale-110 hover:text-bgLightBlue dark:hover:text-bgRose  transition-all duration-300">
-                                    <a href="#">Our Path</a>
+                                    <a href="#numbers">Numbers</a>
                                 </div>
                                 <div className="hover:scale-110 hover:text-bgLightBlue dark:hover:text-bgRose transition-all duration-300">
                                     <a href="#">Contact</a>

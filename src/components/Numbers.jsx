@@ -3,7 +3,7 @@ import Number from "./Number"
 
 const Numbers = () => {
     return (
-        <div className="w-full bg-white dark:bg-bgBlack ">
+        <div id="numbers" className="w-full bg-white dark:bg-bgBlack ">
             <div className="flex flex-col items-center justify-center mt-10">
                 <h1 className="font-extrabold text-4xl my-4 pb-8 mx-2 bg-gradient-to-r text-transparent bg-clip-text from-bgGradient-start-500 to-bgGradient-end-500 dark:from-bgOrange dark:to-bgRose transition-all duration-300">Our numbers speak for us</h1>
                 <div className="flex flex-col md:flex-row flex-wrap items-center justify-center sm:w-1/2 md:w-3/4">

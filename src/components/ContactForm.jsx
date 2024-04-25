@@ -66,7 +66,7 @@ const ContactForm = () => {
     return (
         <div className="w-full flex flex-row items-center justify-center h-auto text-bgBlack dark:text-white overflow-hidden transition-all duration-300">
             <div className="justify-end scale-150 -translate-x-36 rotate-12 ">
-                <img src="bg5.jpg" className="h-96 rounded-sm shadow-md shadow-black" alt="Background"></img>
+                <img src="bg5.jpg" className="h-96 rounded-sm shadow-md shadow-black" alt="Background" loading="lazy"></img>
             </div>
 
             <div className="flex flex-col items-center justify-center">

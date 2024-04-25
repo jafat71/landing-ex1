@@ -11,7 +11,7 @@ const items = [
 ];
 const Gallery = () => {
     return (
-        <div className="w-full bg-white dark:bg-bgBlack pt-5 flex flex-col items-center justify-center overflow-hidden ">
+        <div id="work" className="w-full bg-white dark:bg-bgBlack pt-5 flex flex-col items-center justify-center overflow-hidden ">
             <h1 className="font-extrabold text-4xl my-4 mx-2 bg-gradient-to-r text-transparent bg-clip-text from-bgGradient-start-500 to-bgGradient-end-500 dark:from-bgOrange dark:to-bgRose transition-all duration-300">Our work</h1>
             <AliceCarousel mouseTracking items={items} className="overflow-hidden" />
         </div>

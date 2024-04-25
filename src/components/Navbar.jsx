@@ -45,13 +45,13 @@ const Navbar = ({ setPhoneMenu, phoneMenu }) => {
             <a href="#features">Features</a>
           </li>
           <li className="hover:scale-110 hover:text-bgLightBlue dark:hover:text-bgRose mr-2 transition-all duration-300">
-            <a href="#">Tools</a>
+            <a href="#services">Tools</a>
           </li>
           <li className="hover:scale-110 hover:text-bgLightBlue dark:hover:text-bgRose mr-2 transition-all duration-300">
-            <a href="#">Our Work</a>
+            <a href="#work">Gallery</a>
           </li>
           <li className="hover:scale-110 hover:text-bgLightBlue dark:hover:text-bgRose mr-2 transition-all duration-300">
-            <a href="#">Our Path</a>
+            <a href="#numbers">Numbers</a>
           </li>
           <li className="hover:scale-110 hover:text-bgLightBlue dark:hover:text-bgRose mr-2 transition-all duration-300">
             <a href="#"><Instagram /></a>

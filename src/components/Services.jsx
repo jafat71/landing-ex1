@@ -2,7 +2,7 @@ import Service from "./Service"
 
 const Services = () => {
     return (
-        <div className="w-full bg-white dark:bg-bgBlack pt-5">
+        <div id="services" className="w-full bg-white dark:bg-bgBlack pt-5">
             <div className="px-10 flex flex-col items-center justify-center">
                 <h2 className="text-bgBlack dark:text-bgRose text-3xl font-semibold">Awesome Tools</h2>
                 <h2 className="text-bgBlack dark:text-white text-2xl font-semibold opacity-70">On the top of innovation</h2>
