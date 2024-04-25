@@ -1,8 +1,39 @@
 import ButtonPrimary from "./ButtonPrimary"
+import gsap from "gsap"
+import { useEffect,useRef } from 'react'
 
 const Motivation = () => {
+
+    const motivationRef = useRef(null);
+    
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    gsap.from(entry.target, {
+                        duration: 1.5,
+                        opacity: 0,
+                        y: -100,
+                        ease: 'power2.out'
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        if (motivationRef.current) {
+            observer.observe(motivationRef.current);
+        }
+
+        return () => {
+            if (motivationRef.current) {
+                observer.unobserve(motivationRef.current);
+            }
+        };
+    }, []);
+
     return (
-        <div className="w-full bg-white dark:bg-bgBlack py-5 
+        <div ref={motivationRef} id="motivation" className="w-full bg-white dark:bg-bgBlack py-5 
         flex flex-row md:flex-row items-center 
         justify-stretch
         md:justify-center overflow-hidden ">

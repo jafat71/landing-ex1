@@ -1,5 +1,7 @@
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
+import gsap from "gsap"
+import { useEffect,useRef } from 'react'
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -10,8 +12,37 @@ const items = [
 
 ];
 const Gallery = () => {
+
+    const galleryRef = useRef(null);
+    
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    gsap.from(entry.target, {
+                        duration: 1.5,
+                        opacity: 0,
+                        y: -100,
+                        ease: 'power2.out'
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        if (galleryRef.current) {
+            observer.observe(galleryRef.current);
+        }
+
+        return () => {
+            if (galleryRef.current) {
+                observer.unobserve(galleryRef.current);
+            }
+        };
+    }, []);
+
     return (
-        <div id="work" className="w-full bg-white dark:bg-bgBlack pt-5 flex flex-col items-center justify-center overflow-hidden ">
+        <div ref={galleryRef} id="work" className="w-full bg-white dark:bg-bgBlack pt-5 flex flex-col items-center justify-center overflow-hidden ">
             <h1 className="font-extrabold text-4xl my-4 mx-2 bg-gradient-to-r text-transparent bg-clip-text from-bgGradient-start-500 to-bgGradient-end-500 dark:from-bgOrange dark:to-bgRose transition-all duration-300">Our work</h1>
             <AliceCarousel mouseTracking items={items} className="overflow-hidden" />
         </div>

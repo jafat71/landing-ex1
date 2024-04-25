@@ -7,7 +7,7 @@ const Hero = () => {
 
     useEffect(() => {
         gsap.from('#imgbanner', {
-            duration: 1,
+            duration: 1.5,
             opacity: 0,
             y: -100,
             ease: 'power2.out'
@@ -18,6 +18,21 @@ const Hero = () => {
             duration: 1,
             opacity: 1,
             y: 0,
+            ease: 'elastic.out(1, 0.5)'
+        });
+
+        gsap.from('#textbanner', {
+            duration: 1,
+            opacity: 0,
+            x: -100,
+            ease: 'power2.out'
+        });
+
+        gsap.to('#textbanner', {
+            delay: 1,
+            duration: 1,
+            opacity: 1,
+            x: 0,
             ease: 'elastic.out(1, 0.5)'
         });
     }, []);
@@ -33,7 +48,7 @@ const Hero = () => {
                 <img src="bg1.jpg" alt="background-S" className="hidden md:block h-52 rounded-sm -translate-x-[162px] -z-40 shadow-md shadow-black"></img>
             </div>
 
-            <div className="flex flex-col items-center md:items-start justify-center md:pl-0 w-5/6 md:w-full z-10  md:ml-6">
+            <div id="textbanner" className="flex flex-col items-center md:items-start justify-center md:pl-0 w-5/6 md:w-full z-10  md:ml-6">
                 <h1 className="font-extrabold text-5xl 
                 md:text-7xl my-4 mx-2 
                 bg-gradient-to-r text-transparent 

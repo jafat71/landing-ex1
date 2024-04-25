@@ -1,7 +1,28 @@
 import { Gamepad2, ImagePlayIcon, LucideAirplay} from "lucide-react"
 import { Feature } from "./Feature"
+import gsap from "gsap"
+import { useEffect } from 'react'
 
 const Features = () => {
+
+    useEffect(() => {
+        gsap.from('#features', {
+            duration: 1.5,
+            opacity: 0,
+            y: -100,
+            ease: 'power2.out'
+        });
+
+        gsap.to('#features', {
+            delay: 1,
+            duration: 1,
+            opacity: 1,
+            y: 0,
+            ease: 'expo.out'
+        });
+
+    }, []);
+
     return (
         <div id="features" className="w-full pt-10 mt-20 bg-bgBlack">
             <div className="w-full bg-white dark:bg-bgBlack 

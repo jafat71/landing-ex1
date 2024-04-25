@@ -1,5 +1,7 @@
 import { useState } from "react";
 import ButtonPrimary from "./ButtonPrimary";
+import gsap from "gsap"
+import { useEffect,useRef } from 'react'
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -62,10 +64,40 @@ const ContactForm = () => {
         return errors;
     };
 
+    const imageRef = useRef(null);
+    
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    gsap.from(entry.target, {
+                        duration: 1.5,
+                        opacity: 0,
+                        y: -100,
+                        ease: 'bounce'
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        if (imageRef.current) {
+            observer.observe(imageRef.current);
+        }
+
+        return () => {
+            if (imageRef.current) {
+                observer.unobserve(imageRef.current);
+            }
+        };
+    }, []);
+
+    
+
     return (
         <div className="w-full flex flex-row items-center justify-center h-auto text-bgBlack dark:text-white overflow-hidden transition-all duration-300">
             <div className="justify-end scale-150 -translate-x-36 rotate-12 ">
-                <img src="bg5.jpg" alt="virtual pc" className="h-96 rounded-sm shadow-md shadow-black" loading="lazy"></img>
+                <img ref={imageRef} src="bg5.jpg" alt="virtual pc" className="h-96 rounded-sm shadow-md shadow-black" loading="lazy"></img>
             </div>
 
             <div className="flex flex-col items-center justify-center">
