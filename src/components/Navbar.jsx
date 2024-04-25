@@ -77,8 +77,8 @@ const Navbar = ({ setPhoneMenu, phoneMenu }) => {
         <button onClick={toggleMenu} className="flex md:hidden ml-28 z-10">
           {
             phoneMenu
-            ? <X/>
-            : <MenuIcon />
+            ? <X alt="Close Menu"/>
+            : <MenuIcon alt="Open Menu" />
           }
         </button>
 
@@ -91,30 +91,30 @@ const Navbar = ({ setPhoneMenu, phoneMenu }) => {
           <ul className="pt-10 flex flex-col top-0 bottom-0 left-0 right-0 bg-inhenrit items-center justify-between
         fixed overflow-auto gap-4 w-full">
             <li className="hover:scale-110 hover:text-bgLightBlue dark:hover:text-bgRose  transition-all duration-300">
-              <a href="#">Web</a>
+              <a onClick={toggleMenu} href="#features">Features</a>
             </li>
             <li className="hover:scale-110 hover:text-bgLightBlue dark:hover:text-bgRose transition-all duration-300">
-              <a href="#">CDN</a>
+              <a onClick={toggleMenu} href="#services">Tools</a>
             </li>
             <li className="hover:scale-110 hover:text-bgLightBlue dark:hover:text-bgRose transition-all duration-300">
-              <a href="#">License</a>
+              <a onClick={toggleMenu} href="#work">Gallery</a>
             </li>
             <li className="hover:scale-110 hover:text-bgLightBlue dark:hover:text-bgRose transition-all duration-300">
-              <a href="#">Setup</a>
+              <a onClick={toggleMenu} href="#numbers">Numbers</a>
             </li>
             <li className="hover:scale-110 hover:text-bgLightBlue dark:hover:text-bgRose transition-all duration-300">
-              <a href="#"><Instagram /></a>
+              <a href="#"><Instagram alt="Instagram Account" /></a>
             </li>
             <li className="hover:scale-110 hover:text-bgLightBlue dark:hover:text-bgRose transition-all duration-300">
-              <a href="#"><Github /></a>
+              <a href="#"><Github alt="Github Account" /></a>
             </li>
 
             <div className="flex flex-row items-center justify-between">
               <button onClick={toggleTheme} className="hover:scale-110 hover:text-bgLightBlue dark:hover:text-bgRose mb-20">
                 {
                   themeVal === "light"
-                    ? <Moon />
-                    : <Sun />
+                    ? <Moon alt="Dark Mode" />
+                    : <Sun alt="Light Mode"/>
                 }
 
 

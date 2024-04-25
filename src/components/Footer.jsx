@@ -44,10 +44,10 @@ const Footer = () => {
 
                         <div className="flex flex-col justify-between md:w-32 py-1 gap-10">
                             <div className="hover:scale-110 hover:text-bgLightBlue dark:hover:text-bgRose transition-all duration-300">
-                                <a href="#"><Instagram /></a>
+                                <a href="#"><Instagram alt="Instagram Account" /></a>
                             </div>
                             <div className="hover:scale-110 hover:text-bgLightBlue dark:hover:text-bgRose transition-all duration-300">
-                                <a href="#"><Github /></a>
+                                <a href="#"><Github  alt="Github Account" /></a>
                             </div>
                         </div>
                     </div>
