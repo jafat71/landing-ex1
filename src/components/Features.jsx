@@ -3,7 +3,7 @@ import { Feature } from "./Feature"
 
 const Features = () => {
     return (
-        <div className="w-full pt-10 mt-20 bg-bgBlack">
+        <div id="features" className="w-full pt-10 mt-20 bg-bgBlack">
             <div className="w-full bg-white dark:bg-bgBlack 
             flex flex-col md:flex-row items-start justify-around">
                 <Feature

@@ -5,8 +5,8 @@ const handleDragStart = (e) => e.preventDefault();
 
 const items = [
     <img key="1" src="/vr6.jpg" onDragStart={handleDragStart} role="presentation" className="w-full h-[400px] object-contain" />,
-    <img key="3" src="/vr7.jpg" onDragStart={handleDragStart} role="presentation" className="w-full h-[400px] object-contain" />,
-    <img key="5" src="/vr5.jpg" onDragStart={handleDragStart} role="presentation" className="w-full h-[400px] object-contain" />,
+    <img key="3" src="/vr7.jpg" onDragStart={handleDragStart} role="presentation" className="w-full h-[400px] object-contain" loading="lazy" />,
+    <img key="5" src="/vr5.jpg" onDragStart={handleDragStart} role="presentation" className="w-full h-[400px] object-contain" loading="lazy" />,
 
 ];
 const Gallery = () => {

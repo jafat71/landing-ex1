@@ -42,7 +42,7 @@ const Navbar = ({ setPhoneMenu, phoneMenu }) => {
 
         <ul className="hidden md:flex md:flex-row items-center justify-between w-[400px]">
           <li className="hover:scale-110 hover:text-bgLightBlue dark:hover:text-bgRose mr-2  transition-all duration-300">
-            <a href="#">Features</a>
+            <a href="#features">Features</a>
           </li>
           <li className="hover:scale-110 hover:text-bgLightBlue dark:hover:text-bgRose mr-2 transition-all duration-300">
             <a href="#">Tools</a>
