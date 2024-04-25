@@ -40,12 +40,6 @@ const Footer = () => {
                                 </div>
                             </div>
 
-                            <div className="flex flex-col space-y-4 text-center md:text-left">
-                                <div className="hover:scale-110 hover:text-bgLightBlue dark:hover:text-bgRose transition-all duration-300">
-                                    <a href="#">Information</a>
-                                </div>
-
-                            </div>
                         </div>
 
                         <div className="flex flex-col justify-between md:w-32 py-1 gap-10">
