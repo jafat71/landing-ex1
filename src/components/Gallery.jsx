@@ -4,9 +4,9 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 const handleDragStart = (e) => e.preventDefault();
 
 const items = [
-    <img key="1" src="/vr6.jpg" onDragStart={handleDragStart} role="presentation" className="w-full h-[400px] object-contain" />,
-    <img key="3" src="/vr7.jpg" onDragStart={handleDragStart} role="presentation" className="w-full h-[400px] object-contain" loading="lazy" />,
-    <img key="5" src="/vr5.jpg" onDragStart={handleDragStart} role="presentation" className="w-full h-[400px] object-contain" loading="lazy" />,
+    <img key="1" src="/vr6.jpg" alt="virtual stage 1" onDragStart={handleDragStart} role="presentation" className="w-full h-[400px] object-contain" />,
+    <img key="3" src="/vr7.jpg" alt="virtual stage 2" onDragStart={handleDragStart} role="presentation" className="w-full h-[400px] object-contain" loading="lazy" />,
+    <img key="5" src="/vr5.jpg" alt="virtual stage 3" onDragStart={handleDragStart} role="presentation" className="w-full h-[400px] object-contain" loading="lazy" />,
 
 ];
 const Gallery = () => {

@@ -21,7 +21,7 @@ const Motivation = () => {
                 </div>
             </div>
 
-            <img src="/bg2.jpg" className="w-[500px] md:translate-x-24 rotate-90 md:rotate-45 rounded-sm shadow-md shadow-black" />
+            <img src="/bg2.jpg" alt="virtual animals" className="w-[500px] md:translate-x-24 rotate-90 md:rotate-45 rounded-sm shadow-md shadow-black" />
 
         </div>
     )

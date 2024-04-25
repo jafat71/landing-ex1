@@ -28,9 +28,9 @@ const Hero = () => {
         h-auto md:mt-24 text-bgBlack dark:text-white overflow-hidden transition-all duration-300">
 
             <div id="imgbanner" className="hidden md:flex flex-row items-center justify-end md:scale-150 translate-x-44 z-10 md:translate-x-32 lg:translate-x-28 md:translate-y-10 md:-rotate-12 transition-all duration-300 ease-in">
-                <img src="bg1.jpg" className="hidden md:block h-96 rounded-sm shadow-md shadow-black"></img>
-                <img src="bg1.jpg" className="hidden md:block h-72 rounded-sm -translate-x-[95px] -z-20 shadow-md shadow-black"></img>
-                <img src="bg1.jpg" className="hidden md:block h-52 rounded-sm -translate-x-[162px] -z-40 shadow-md shadow-black"></img>
+                <img src="bg1.jpg" alt="background-L" className="hidden md:block h-96 rounded-sm shadow-md shadow-black"></img>
+                <img src="bg1.jpg" alt="background-M" className="hidden md:block h-72 rounded-sm -translate-x-[95px] -z-20 shadow-md shadow-black"></img>
+                <img src="bg1.jpg" alt="background-S" className="hidden md:block h-52 rounded-sm -translate-x-[162px] -z-40 shadow-md shadow-black"></img>
             </div>
 
             <div className="flex flex-col items-center md:items-start justify-center md:pl-0 w-5/6 md:w-full z-10  md:ml-6">
