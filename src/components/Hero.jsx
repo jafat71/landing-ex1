@@ -22,7 +22,7 @@ const Hero = () => {
         });
 
         gsap.from('#textbanner', {
-            duration: 1,
+            duration: 0.5,
             opacity: 0,
             x: -100,
             ease: 'power2.out'
