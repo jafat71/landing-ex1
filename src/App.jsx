@@ -26,7 +26,7 @@ const App = () => {
 
 
   return (
-    <div className="min-h-screen dark:bg-gradient-to-br from-bgGradient-start to-bgGradient-end overflow-x-hidden">
+    <div className="scroll-smooth min-h-screen dark:bg-gradient-to-br from-bgGradient-start to-bgGradient-end overflow-x-hidden">
       <Navbar setPhoneMenu={setPhoneMenu} phoneMenu={phoneMenu} />
       {
         !phoneMenu
