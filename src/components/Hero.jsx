@@ -23,7 +23,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <div className="relative 
+        <div className=" 
         flex flex-col md:flex-row items-center  
         h-auto md:mt-24 text-bgBlack dark:text-white overflow-hidden transition-all duration-300">
 
@@ -33,7 +33,7 @@ const Hero = () => {
                 <img src="bg1.jpg" className="hidden md:block h-52 rounded-sm -translate-x-[162px] -z-40 shadow-md shadow-black"></img>
             </div>
 
-            <div className="flex flex-col items-center md:items-start justify-center md:pl-0 w-5/6 md:w-full z-10">
+            <div className="flex flex-col items-center md:items-start justify-center md:pl-0 w-5/6 md:w-full z-10  md:ml-6">
                 <h1 className="font-extrabold text-5xl 
                 md:text-7xl my-4 mx-2 
                 bg-gradient-to-r text-transparent 
@@ -44,7 +44,7 @@ const Hero = () => {
                 </h1>
                 <span className="text-2xl font-semibold my-4 z-10 
                 text-center md:text-left  mx-2
-                text-white md:text-white ">TELAAZ X Tech is the forefront of the virtual and augmented reality revolution.</span>
+                text-black dark:text-white ">TELAAZ X Tech is the forefront of the virtual and augmented reality revolution.</span>
                 <div className="text-center md:text-left">
                     <ButtonPrimary text={"Start Now"} />
                     <ButtonSecondary text={"Contact Us"} />
